@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(5px + 1vw);
+    font-family: var(--font-family);
+    color: white;
+    background-color: #F6F5FA;
+}
+@media (min-width:360px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:760px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.parent {
+    height: 100%;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-heading{
+    font-family: var(--font-family);
+    font-size: 24px;
+}
+.para1{
+    font-family: var(--font-family);
+    opacity: 0.5;
+    margin-top: -5px;
+    width: 70%;
+    text-align: center;
+}
+.parent2{
+    display: flex;
+    justify-content: center;
+}
+.billing{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 50px;
+    font-family: var(--font-family);
+}
+.plan-header{
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-save {
+    background: white;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    color: #8645ff;
+    font-weight: bold;
+}
+.plan-feature-intro li {
+    margin-bottom: 16px;
+    display: flex;
+    font-family: var(--font-family);
+}
+
+.plan-feature-base li {
+    margin-bottom: 16px;
+    display: flex;
+    font-family: var(--font-family);
+}
+
+.plan-feature-pro li {
+    margin-bottom: 16px;
+    display: flex;
+    font-family: var(--font-family);
+}
+.plan-feature-ent li {
+    margin-bottom: 16px;
+    display: flex;
+    font-family: var(--font-family);
+}
+.plan-feature-intro li:before {
+    content: "✓";
+    margin-right: 16px;
+}
+.plan-feature-base li:before {
+    content: "✓";
+    margin-right: 16px;
+}
+.plan-feature-pro li:before {
+    content: "✓";
+    margin-right: 16px;
+}
+.plan-feature-ent li:before {
+    content: "✓";
+    margin-right: 16px;
+}
+.plans
+{
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 24px;
+    color: black;
+    font-family: var(--font-family);
+}
+
+
+.plans:first-child .plan-feature-intro li{
+    opacity: 0.5;
+}
+
+.plans:first-child .plan-feature-intro li:first-child{
+    opacity: 1;
+}
+
+.plan-amount{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.plans:nth-child(2) .plan-feature-base li:nth-child(n+3){
+    opacity: 0.5;
+}
+
+.plans:nth-child(3) .plan-feature-pro li:nth-child(n+5){
+    opacity: 0.5;
+}
+
+.plan-duration{
+    opacity: 0.5;
+}
+
+.plans:first-child .plan-feature-intro li:nth-child(n+2):before{
+    content: "X" ;
+
+}
+
+.plans:nth-child(2) .plan-feature-base li:nth-child(n+3):before{
+    content: "X" ;
+
+}
+.plans:nth-child(3) .plan-feature-pro li:nth-child(n+5):before{
+    content: "X" ;
+
+}
+
+.plan-choose {
+    width: 100%;
+    background: #8645ff;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    font-weight: bold;
+}
+.plans:hover{
+    background-color:  #181059;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+/* slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+
