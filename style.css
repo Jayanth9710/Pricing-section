@@ -74,6 +74,20 @@
     color: #8645ff;
     font-weight: bold;
 }
+
+.plan-feature-intro{
+    padding: 0;
+}
+
+.plan-feature-base{
+    padding:0;
+}
+.plan-feature-pro{
+    padding:0;
+}
+.plan-feature-ent{
+    padding:0;
+}
 .plan-feature-intro li {
     margin-bottom: 16px;
     display: flex;
